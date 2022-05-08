@@ -15,6 +15,16 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/public/index.js"));
 });
 
+app.get("/notes", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public/notes.html"));
+});
+
+app.get("/api/notes", (request, response) => {
+  let file = fs.readFileSync("db/db.json");
+  let content = JSON.parse(file);
+  response.json(content);
+});
+
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
