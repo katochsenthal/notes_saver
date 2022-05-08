@@ -27,9 +27,10 @@ app.get("/api/notes", (req, res) => {
 });
 
 app.post("/api/notes", (req, res) => {
-  const note = req.body;
   const file = fs.readFileSync("db/db.json");
   const content = JSON.parse(file);
+  const note = { ...req.body, id: content.length + 1 };
+
   content.push(note);
   fs.writeFileSync("db/db.json", JSON.stringify(content));
   res.sendFile(path.join(__dirname, "/public/notes.html"));
