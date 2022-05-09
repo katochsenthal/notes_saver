@@ -25,7 +25,7 @@ Making taking notes easier, write your notes and save to review or delete later.
 
 ## Installation
 
-## Steps:
+Steps:
 
 - clone repository
 - install node
@@ -33,15 +33,15 @@ Making taking notes easier, write your notes and save to review or delete later.
 
 ## Usage
 
-- For Demo click [here](https://drive.google.com/file/d/11AbZh8YTipDyocOAsdWFQ7837d2ZrKl8/view?usp=sharing)
+- To use the app click [here]()
 
-- ![Alt text](dist/commandL.png)
+- ![Alt text](public/assets/images/1.png)
 
-- ![Alt text](dist/commandL.png)
+- ![Alt text](public/assets/images/2.png)
 
-- ![Alt text](dist/commandL.png)
+- ![Alt text](public/assets/images/3.png)
 
-- ![Alt text](dist/commandL.png)
+- ![Alt text](public/assets/images/4.png)
 
 ## License
 
