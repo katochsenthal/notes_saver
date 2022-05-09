@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 const { get } = require("express/lib/response");
 
-const PORT = 3001;
+const port = process.env.PORT || 3001;
 
 const app = express();
 
@@ -54,6 +54,6 @@ app.delete("/api/notes/:id", (req, res) => {
   fs.writeFileSync("./db/db.json", JSON.stringify(fileContent));
 });
 
-app.listen(PORT, () =>
+app.listen(port, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );

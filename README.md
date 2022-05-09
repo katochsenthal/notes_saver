@@ -33,7 +33,7 @@ Steps:
 
 ## Usage
 
-- To use the app click [here]()
+- To use the app click [here](https://notes-saver1290.herokuapp.com/)
 
 - ![Alt text](public/assets/images/1.png)
 
